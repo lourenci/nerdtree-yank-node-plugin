@@ -10,6 +10,6 @@ function! NERDTreeYankRelativePath()
 
     call setreg('"', relativePath)
     call setreg('*', relativePath)
+    call nerdtree#echo("Relative path yanked!")
   endif
-  call nerdtree#echo("Relative path yanked!")
 endfunction
